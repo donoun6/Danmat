@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'Binggrae-Bold';
+	src: url("../../font/BinggraeSamanco-Bold.otf") format("truetype");
+}
+
+@font-face {
+	font-family: 'BinggraeSamanco';
+	src: url("../../font/BinggraeSamanco.otf") format("truetype");
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+	output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'BinggraeSamanco';
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section {
+	display: block;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: 0 0;
+	text-decoration: none;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input, select, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+-ms-viewport {
+	width: device-width;
+}
+
+body {
+	-ms-overflow-style: scrollbar;
+}
+
+@media screen and (max-width: 480px) {
+	html, body {
+		min-width: 320px;
+	}
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	background: #f4f4f4;
+}
+
+body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+	-moz-animation: none !important;
+	-webkit-animation: none !important;
+	-ms-animation: none !important;
+	animation: none !important;
+	-moz-transition: none !important;
+	-webkit-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
+}
+
+@media screen and (max-width: 980px) {
+	#header .links {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	#header {
+		height: 2.75em;
+		line-height: 2.75em;
+	}
+	#header h1 {
+		padding: 0 0 0 1em;
+	}
+	#header .main .search {
+		display: none;
+	}
+}
+
+#header {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
+	justify-content: space-between;
+	background-color: #c2bde3;
+	border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+	height: 90px;
+	left: 0;
+	line-height: 90px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+}
+
+#header a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#header ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	float: right;
+}
+
+#header ul li {
+	display: inline-block;
+	padding-left: 0;
+}
+
+#header h1 {
+	height: inherit;
+	line-height: inherit;
+	padding: 0 0 0 1.5em;
+	white-space: nowrap;
+	margin-left: 40px;
+}
+
+#header h1 a {
+	color: #ffffff;
+	font-size: 50px;
+	position: absolute;
+	display: flex;
+}
+
+#header .links {
+	-moz-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	height: inherit;
+	line-height: inherit;
+	margin-left: 1.5em;
+	overflow: hidden;
+	padding-left: 1.5em;
+}
+
+#header .links ul li {
+	line-height: 1;
+	margin-left: 1em;
+	padding-left: 1em;
+}
+
+#header .links ul li:first-child {
+	border-left: 0;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#header .links ul li a {
+	border-bottom: 0;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+#header .main {
+	height: inherit;
+	line-height: inherit;
+	text-align: right;
+}
+
+#header .main ul {
+	height: inherit;
+	line-height: inherit;
+}
+
+#header .main ul li {
+	height: inherit;
+	line-height: inherit;
+	white-space: nowrap;
+}
+
+#header .main ul li>* {
+	display: block;
+	float: left;
+}
+
+#header .main ul li>a {
+	text-decoration: none;
+	border-bottom: 0;
+	overflow: hidden;
+	position: relative;
+	text-indent: 4em;
+	width: 4em;
+}
+
+#header .main ul li>a:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	text-transform: none !important;
+	font-family: 'Font Awesome 5 Free';
+	background-image: url("/images/ms.png");
+	font-weight: 900;
+}
+
+#header .main ul li>a:before {
+	display: block;
+	height: inherit;
+	left: 0;
+	line-height: inherit;
+	position: absolute;
+	text-align: center;
+	text-indent: 0;
+	top: 0;
+	width: inherit;
+}
+
+#header form {
+	margin: 0;
+}
+
+#header form input {
+	display: inline-block;
+	height: 2.5em;
+	position: relative;
+	top: -2px;
+	vertical-align: middle;
+}
+
+.logoutBtn {
+	font-family: 'BinggraeSamanco';
+	font-size: 20px;
+	line-height: 25px;
+	width: 120px;
+	height: 40px;
+	background: white;
+	margin: 0 auto;
+	color: #c2bde3;
+	margin-bottom: 5px;
+	border-radius: 30px;
+	border: 1px solid #fff;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.page-title {
+	margin-bottom: 60px;
+}
+
+.page-title h3 {
+	font-size: 50px;
+	color: #6f61c9;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+}
+
+label {
+	font-size: 25px;
+	font-weight: 300;
+}
+
+#footer {
+	text-align: center;
+}
+
+#footer .icons {
+	color: #aaaaaa;
+}
+
+#footer .copyright {
+	color: #aaaaaa;
+	font-family: "Raleway", Helvetica, sans-serif;
+	font-size: 0.5em;
+	font-weight: 400;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	margin-bottom: 80px;
+}
+
+.loginBtn {
+	
+  font-family: 'BinggraeSamanco';
+  font-size: 20px;
+  line-height: 25px;
+  width: 120px;
+  height: 40px;
+  background: white;
+  margin: 0 auto;
+  color: #c2bde3;
+  margin-bottom: 5px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.loginBtn:hover {
+	background: white;
+	border: 1px solid #fff;
+	color: black;
+}
+
+label {
+	display: block;
+	text-align: left;
+}

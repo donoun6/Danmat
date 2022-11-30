@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'Cafe24Ssurround';
+	background: linear-gradient(180deg,#8CD790,#77AF9C 60%);
+	overflow: hidden;
+	color: #285943;
+}
+
+div.wrap {
+	position: absolute;
+	background: #D7FFF1;
+	left: 10%;
+	top: 3%;
+	width: 80%;
+	border-radius: 8px;
+	padding: 20px;
+	margin: auto;
+}
+
+.wrap div {
+	position: relative;
+	display: block;
+	left: 0%;
+	margin: 20px auto 0px;
+}
+
+.wrap div.text-area{
+	background: linear-gradient(180deg,#8CD790,#77AF9C 80%);;
+	left: 0%;
+	height:500px;
+	-ms-overflow-style: none;
+	overflow-y: scroll;
+}
+
+.wrap div.text-area h2 {
+	margin-left: 10px;
+	font-size: 32px;
+}
+
+.wrap div.text-area h3 {
+	margin-left: 20px;
+	font-size: 24px;
+}
+
+.wrap div.text-area h3#Answer {
+	text-align: center;
+}
+
+.wrap div.life{
+	left: 0%;
+}
+
+.btn {
+	margin-top: 50px;
+}
+.life p#life{
+	font-size:18px;
+	font-weight: bold;
+	font-family: 'Cafe24Ssurround';
+}
+
+.life p#user{
+	font-size:18px;
+	font-weight: bold;
+	font-family: 'Cafe24Ssurround';
+	position: absolute;
+	right:0px;
+	top:0px;
+	margin:0px;
+}
+
+.life span {
+	position: absolute;
+	right: 50%;
+	top: 0;
+}
+
+.life span#e1 {
+	right: 60%;
+}
+
+.life span#e3 {
+	right: 40%;
+}
+
+.life div {
+	position: absolute;
+	top: -22px;
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+}
+
+.life div#A{
+	background: #8CD790;
+	right: 30%;
+}
+
+.life div#WA{
+	right: -10%;
+	background: #285943;
+}
+
+.life div#L_A{
+	right: 15%;
+	background: #77AF9C;
+}
+
+
+
+div input.input {
+			width: 50px;
+			height: 50px;
+			font-size: 40px;
+			text-align: center;
+			left: 40%;
+			position: relative;
+		}
+div #input label {
+	position: relative;
+	left: 37%;
+	font-family: 'Cafe24Ssurround';
+	font-size: 32px;
+}
+		.life {
+			position: absolute;
+		}
+		button {
+			width: 150px;
+			height: 50px;
+			background: #5DC8CD;
+			box-shadow: 0px 5px 0px 0px #1E8185;
+			font-size:24px;
+			font-weight: bold;
+			font-family: 'Cafe24Ssurround';
+			color: white;
+			position: relative;
+			left:40%;
+		}
+		button:hover {
+			box-shadow: 0px 0px 0px 0px #1E8185;
+		}
+		
+		#Exit {
+			width: 150px;
+			height: 50px;
+			margin: 10px 0px;
+			background: #5DC8CD;
+			box-shadow: 0px 5px 0px 0px #1E8185;
+			position: relative;
+			left: 46%;
+			font-size:24px;
+			font-weight: bold;
+			font-family: 'Cafe24Ssurround';
+			color: white;
+		}
+		#Exit:hover {
+			box-shadow: 0px 0px 0px 0px #1E8185;
+		}
+		
+		#Hint {
+			width: 150px;
+			height: 50px;
+			margin: 10px 0px;
+			background: #5DC8CD;
+			box-shadow: 0px 5px 0px 0px #1E8185;
+			position: relative;
+			left: 40%;
+			font-size:24px;
+			font-weight: bold;
+			font-family: 'Cafe24Ssurround';
+			color: white;
+		}
+		#Hint:hover {
+			box-shadow: 0px 0px 0px 0px #1E8185;
+		}
+		
+		.btn #Answer {
+			width: 150px;
+			height: 50px;
+			margin: 10px 0px;
+			background: #5DC8CD;
+			box-shadow: 0px 5px 0px 0px #1E8185;
+			position: relative;
+			left: 46%;
+			font-size:24px;
+			font-weight: bold;
+			font-family: 'Cafe24Ssurround';
+			color: white;
+		}
+		.btn #Answer:hover {
+			box-shadow: 0px 0px 0px 0px #1E8185;
+		}
+		
+		#Restart {
+			width: 150px;
+			height: 50px;
+			background: #5DC8CD;
+			box-shadow: 0px 5px 0px 0px #1E8185;
+			margin: 10px 0px;
+			position: relative;
+			left: 46%;
+			font-size:24px;
+			font-weight: bold;
+			font-family: 'Cafe24Ssurround';
+			color: white;
+		}
+		#Restart:hover {
+			box-shadow: 0px 0px 0px 0px #1E8185;
+		}
+
+#demo-canvas{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#GameClear, #GameOver{
+	font-size: 50px;
+	text-align: center;
+	margin-top: 200px;
+	animation-name: opacity;
+	animation-duration: 2s;
+}
+
+.wrap div.text-area::-webkit-scrollbar {
+	display: none;
+}
+
+@keyframes opacity{
+	from {
+		opacity: 0;
+	}
+	
+	to {
+		opacity: 1;
+	}
+	
+}

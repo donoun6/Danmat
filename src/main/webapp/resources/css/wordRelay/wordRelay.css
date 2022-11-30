@@ -1,0 +1,405 @@
+@charset "UTF-8";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+/* Galmuri11을 사용하려면 */
+/* font-family: 'Galmuri11'; */
+
+/* Galmuri11 Bold를 사용하려면 */
+/* font-family: 'Galmuri11'; */
+/* font-weight: 700; */
+
+/* Galmuri11 Condensed를 사용하려면 */
+/* font-family: 'Galmuri11'; */
+/* font-stretch: condensed; */
+
+/* Galmuri9을 사용하려면 */
+/* font-family: 'Galmuri9'; */
+
+/* Galmuri7을 사용하려면 */
+/* font-family: 'Galmuri7'; */
+@font-face {
+    font-family: 'HBIOS-SYS';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/HBIOS-SYS.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'BinggraeSamanco';
+  src: url("../../font/BinggraeSamanco.otf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Binggrae-Bold';
+  src: url("../../font/BinggraeSamanco-Bold.otf") format("truetype");
+}
+
+html,body { height: 100%; }
+ul,ol { list-style: none; }
+a { color: #666666; }
+
+li { position: relative; }
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'BinggraeSamanco';
+  background: #A6D1E6;
+  color: #444;
+  overflow: hidden;
+    opacity: 0;
+  transition: opacity 1s 1s
+}
+
+body.reveal {
+    opacity: 1;
+    overflow: hidden;
+}
+
+body.hidden {
+    opacity: 0
+}
+
+
+.toplogo {
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 50px 0 0 140px;
+}
+
+.ex {
+	font-weight: 100;
+	font-family: 'BinggraeSamanco';
+	line-height: 80px;
+    text-align: center;
+    user-select: auto;
+    position: absolute;
+    bottom: -30px;
+    width: 350px;
+    background: rgba(0,0,0, .4);
+    font-size: 25px;
+    left: calc(50% - 175px);
+    height: 100px;
+    color: #fff;
+    border-radius: 30px;
+    }
+
+.logoImg {
+  background-image: url("../../images/logo_transparent.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  opacity: .8;
+}
+
+.logo-title {
+  font-family: 'BinggraeSamanco';
+  padding-left: 50px;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+/* box btn wrap */
+
+.btn-1 , .btn-2 {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 25px;
+  text-align: center;
+  background: #bf5eae;
+  font-size: 20px;
+  transition: .5s;
+  z-index: 999;
+}
+
+.btn-2 {
+  right: 150px;
+}
+
+.btn-1:hover > a , .btn-2:hover > a  {
+  color: black;
+  transition: .5s;
+}
+
+.btn-1 a , .btn-2 a {
+  display: block;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+}
+
+.point-box {
+  font-family: 'HBIOS-SYS';
+  color: #444;
+  position: absolute;
+  top: 200px;
+  width: 150px;
+  height: 50px;
+}
+
+.point-box h1 {
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+/* header */
+
+.header {
+  position: relative;
+}
+
+.title {
+  font-family: 'BinggraeSamanco';
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 80px;
+  padding-top: 150px;
+  color: #fff;
+}
+
+/* main */
+.user-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.def-box {
+  position: absolute;
+  top: -250%;
+  left: -250%;
+  width: 250px;
+  border-radius: 20px;
+  background: rgba(117, 170, 255 , 0.8);
+  box-shadow: 0 7px 20px rgb(0 0 0 / 10%);
+  padding: 20px;
+}
+
+.def-box h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.def-box p {
+  font-size: 25px;
+}
+
+.used-box {
+  position: absolute;
+  top: -250%;
+  right: -250%;
+  width: 250px;
+  border-radius: 20px;
+  background: rgba(117, 170, 255 , 0.8);
+  box-shadow: 0 7px 20px rgb(0 0 0 / 10%);
+  padding: 20px;
+}
+
+.used-box h1 {
+  font-family: 'HBIOS-SYS';
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.used-box p {
+  font-size: 20px;
+}
+
+.first-computer , .second-user {
+  position: relative;
+}
+
+.first-computer {
+  padding-left: 25%;
+}
+
+.first-computer .user-img {
+  background-image: url("../../images/wordRelay/—Pngtree—pixel%20tv%20drama%20illustration_4650574.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.second-user {
+  padding-right: 25%;
+}
+
+.user-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  /* box-shadow: 0 7px 20px rgb(0 0 0 / 10%);
+  background: #F3F1F5; */
+}
+
+.second-user .user-img {
+  background-image: url("../../images/wordRelay/KakaoTalk_20220823_010002606.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.word {
+  width: 250px;
+  height: 50px;
+  border-radius: 30px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.input-wrap{
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.suggestion {
+	font-family: 'HBIOS-SYS';
+	position: absolute;
+	bottom: 220px;
+	font-size: 30px; 
+}
+
+.word-box {
+  font-family: 'HBIOS-SYS';
+  width: 300px;
+  height: 80px;
+  border-radius: 20px;
+  line-height: 80px;
+  font-size: 50px;
+  border: 3px solid #444;
+  background: #fff;
+  box-shadow: 0 7px 20px rgb(0 0 0 / 10%);
+  text-align: center;
+  color: black;
+}
+
+
+/* input */
+.input-text {
+  font-family: 'BinggraeSamanco';
+  width: 250px;
+  height: 50px;
+  border: 3px solid #444;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 24px;
+  background: #fff;
+  box-shadow: 0 7px 20px rgb(0 0 0 / 10%);
+}
+
+@keyframes move {
+0%{
+transform: translateY(0);
+}
+5%{
+  transform: translateY(-15px);
+}
+10%{
+  transform: translateY(0);
+}
+15%{
+  transform: translateY(-15px);
+}
+20%{
+  transform: translateY(0);
+}
+}
+
+/* ajax */
+
+.gameOver {
+	font-family: 'HBIOS-SYS';
+	 position: relative;
+    z-index: 999;
+    height: 3000px;
+    width: 100vw;
+    top: -56px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+	animation-name: move2;
+ 	 animation-duration: 1.5s;
+ 	 animation-timing-function: ease-in-out;
+ 	 animation-fill-mode: both;
+ 	 background: rgba(0, 0, 0, 0.8);
+ 	 color: #fff;
+}
+
+.gameOver > h1 {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 200px;
+}
+
+.gameOver > h2 {
+	text-align: center;
+	font-size: 25px;
+}
+
+.gameOver > a {
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	text-align: center;
+	background: #fff;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 20px;
+	font-size: 25px;
+	margin-top: 20px;
+	line-height: 50px;
+	background: #bf5eae;
+	color: #fff;
+}
+
+@keyframes move2 {
+0%{
+  margin-top: -100%;
+}50% {
+  margin-top: 100px;
+}60% {
+	margin-top: -100px;	
+}70%{
+	margin-top: 50px;
+}80%{
+	margin-top: -50px;
+}90%{
+	margin-top: 20px;
+}100%{
+	margin-top: 0;
+}
+}

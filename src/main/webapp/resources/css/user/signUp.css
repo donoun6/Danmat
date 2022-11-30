@@ -1,0 +1,199 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Secular+One&display=swap');
+@font-face {
+  font-family: 'Binggrae-Bold';
+  src: url("../font/BinggraeSamanco-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: 'BinggraeSamanco';
+  src: url("../font/BinggraeSamanco.otf") format("truetype");
+}
+/* //general ui */
+/* input default style */
+body{ background: rgba(0, 0, 0, 0.1); margin: 0px;}
+/* input size type  */
+
+input {
+  width: 454px;
+  height: 47px;
+  border: 1px solid #dadada;
+  border-radius: 30px;
+  padding-left: 20px;
+}
+
+input::placeholder {
+  font-size: 15px;
+  color: #8e8e8e;
+}
+/* button style */
+
+button:focus {
+  outline: none;
+}
+
+.gbtn {
+  padding: 8.5px 15px;
+  font-size: 18px;
+  font-weight: 700;
+ background: #6f61c9;
+}
+
+/* button color style */
+
+
+.button-group {
+  text-align: center;
+
+}
+
+
+/* general ui// */
+
+#wrap {
+  width: 768px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#wrap .title {
+  font-family: 'Secular One', sans-serif;
+  text-align: center;
+  margin-top: 200px;
+}
+
+#wrap .title h2 a{
+    font-size: 50px;
+    color: #6f61c9;
+}
+
+#wrap .title h1 {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 1;
+  color: #333333;
+}
+
+#wrap .title .prec {
+  float: right;
+  height: 25px;
+  line-height: 25px;
+  padding: 0;
+  color: #666666;
+}
+
+#wrap .title .prec em {
+  font-size: 8px;
+  color: #f85858;
+  margin-right: 5px;
+}
+
+input + .gbtn {
+  margin-left: 5px;
+}
+
+label + .txt {
+  line-height: 21px;
+}
+
+#wrap .title-img {
+  width: 240px;
+  height: 44px;
+  margin: 0 auto;
+
+}
+
+.title-img {
+  background-image: url('https://static.nid.naver.com/images/ui/join/m_naver_logo_20191126.png');
+  background-size: cover;
+}
+
+h2 {
+margin: 19px 0 8px 0;
+font-size: 14px;
+font-weight: 700px;
+}
+
+.name {
+  margin-top: 39px;
+}
+
+.table_a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tel2 {
+  width: 329px;
+  height: 47px;
+  margin: 10px 0 10px 0;
+}
+.gbtn {
+	width: 480px;
+	cursor: pointer;
+}
+
+button {
+  width: 115px;
+  height: 50px;
+  background-color: #5dbde3;
+  border: solid 1px rgba(0,0,0,.08);
+  color: white;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+.imgbox {
+  background-image: url('https://static.nid.naver.com/images/ui/login/pc_sp_login_190522.png');
+  width: 63px;
+  height: 12px;
+  background-position: -242px 0;
+  background-size: 460px auto;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    text-align: center;
+}
+
+footer .fbox ul {
+  padding: 0;
+  overflow: hidden;
+  text-align : center;
+
+  margin: 30px 0 9px 0;
+}
+
+footer .fbox ul li{
+  float: left;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.fbox_bottom .imgbox {
+  display: inline-block;
+}
+
+.fbox_bottom .copy {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 9px;
+}
+
+.fbox_bottom h2 {
+  font-family: 'BinggraeSamanco';
+  color: #6f61c9;
+  font-size: 25px;
+}
+
+.error {
+	color: red;
+}
+
+.img {
+
+}

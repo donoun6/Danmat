@@ -1,0 +1,439 @@
+@charset "UTF-8";
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+/* Galmuri11을 사용하려면 */
+/* font-family: 'Galmuri11'; */
+/* Galmuri11 Bold를 사용하려면 */
+/* font-family: 'Galmuri11'; */
+/* font-weight: 700; */
+/* Galmuri11 Condensed를 사용하려면 */
+/* font-family: 'Galmuri11'; */
+/* font-stretch: condensed; */
+/* Galmuri9을 사용하려면 */
+/* font-family: 'Galmuri9'; */
+/* Galmuri7을 사용하려면 */
+/* font-family: 'Galmuri7'; */
+@font-face {
+  font-family: 'HBIOS-SYS';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/HBIOS-SYS.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BinggraeSamanco';
+  src: url("../../font/BinggraeSamanco.otf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Binggrae-Bold';
+  src: url("../../font/BinggraeSamanco-Bold.otf") format("truetype");
+}
+
+html, body {
+  height: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: #666666;
+}
+
+li {
+  position: relative;
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'BinggraeSamanco';
+  background: #96C7C1;
+  color: #444;
+  overflow-y:scroll;
+}
+
+.def {
+  box-sizing: border-box;
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  left: calc(50% - 250px);
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  padding: 30px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -440px;
+  transition: .5s;
+}
+
+.def:hover {
+  margin-top: -200px;
+  background: rgba(0, 0, 0, .9);
+  transition: .5s;
+}
+
+.def span {
+  display: block;
+  margin-top: 200px;
+}
+
+.def .name {
+	margin-top: 50px;
+}
+
+.def .Answer {
+	width: 50px;
+	height: 50px;
+	background: #8CD790;
+	position: absolute;
+	top: 66%;
+	left: 4%;
+}
+
+.def .Word_Answer {
+	width: 50px;
+	height: 50px;
+	background: #77AF9C;
+	position: absolute;
+	margin-bottom: 20px;
+	top: 66%;
+	left: 28%;
+}
+
+.def .Wrong_Answer {
+	width: 50px;
+	height: 50px;
+	background: #285943;
+	position: absolute;
+	margin-bottom: 20px;
+	top: 66%;
+	left: 62%;
+}
+
+.def p {
+  width: calc(500px - 60px);
+  position: absolute;
+  bottom: 15px;
+}
+
+.toplogo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 50px 0 0 140px;
+}
+
+.logoImg {
+  background-image: url("../../images/logo_transparent.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  opacity: .8;
+}
+
+.logo-title {
+  font-family: 'BinggraeSamanco';
+  padding-left: 50px;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+/* box btn wrap */
+.btn-1, .btn-2 {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 25px;
+  text-align: center;
+  background: #bf5eae;
+  font-size: 20px;
+  transition: .5s;
+  z-index: 999;
+}
+
+.btn-2 {
+  right: 150px;
+}
+
+.btn-1:hover>a, .btn-2:hover>a {
+  color: black;
+  transition: .5s;
+}
+
+.btn-1 a, .btn-2 a {
+  display: block;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+}
+
+/* header */
+.header {
+  position: relative;
+}
+
+.title {
+  font-family: 'BinggraeSamanco';
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 70px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.main-wrap {
+  position: relative;
+  width: 60%;
+  background: #A97155;
+  margin: 0 auto;
+  height: 60%;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 30px;
+  color: #f1f1f1;
+}
+
+.wrap {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #5F7161;
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.game {
+  width: 100%;
+  height: 70%;
+  overflow: scroll;
+}
+
+.game h2{
+	font-size: 50px;
+}
+
+.game h3.hint {
+	margin-left: 10px;
+}
+
+.game h3#Answer {
+	text-align: center;
+	animation-name: opacity;
+	animation-duration: 2s;
+}
+
+.img {
+  background-image: url("../../images/TwentyHills/—Pngtree—little frog pixel painting illustration_4764681.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  opacity: .8;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.userid {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  color: #FAF4B7;
+  margin-bottom: 10px;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+
+  5% {
+    transform: translateY(-15px);
+  }
+
+  10% {
+    transform: translateY(0);
+  }
+
+  15% {
+    transform: translateY(-15px);
+  }
+
+  20% {
+    transform: translateY(0);
+  }
+}
+
+.input {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  left: 40%;
+  position: relative;
+  bottom: 5px;
+}
+
+#input {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  height: 50px;
+}
+
+div #input label {
+  display: inline-block;
+  position: relative;
+  left: 39%;
+  font-family: 'BinggraeSamanco';
+  font-size: 32px;
+  line-height: 50px;
+}
+
+.life {
+  position: absolute;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background: #5DC8CD;
+  box-shadow: 0px 5px 0px 0px #1E8185;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'BinggraeSamanco';
+  color: white;
+  position: relative;
+  left: 40%;
+}
+
+button:hover {
+  box-shadow: 0px 0px 0px 0px #1E8185;
+}
+
+#Exit {
+  width: 150px;
+  height: 50px;
+  margin: 10px 0px;
+  background: #5DC8CD;
+  box-shadow: 0px 5px 0px 0px #1E8185;
+  position: relative;
+  left: 46%;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'BinggraeSamanco';
+  color: white;
+}
+
+#Exit:hover {
+  box-shadow: 0px 0px 0px 0px #1E8185;
+}
+
+#Hint {
+  width: 150px;
+  height: 50px;
+  margin: 10px 0px;
+  background: #5DC8CD;
+  box-shadow: 0px 5px 0px 0px #1E8185;
+  position: relative;
+  left: 40%;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'BinggraeSamanco';
+  color: white;
+}
+
+#Hint:hover {
+  box-shadow: 0px 0px 0px 0px #1E8185;
+}
+
+.btn #Answer {
+  width: 150px;
+  height: 50px;
+  margin: 10px 0px;
+  background: #5DC8CD;
+  box-shadow: 0px 5px 0px 0px #1E8185;
+  position: relative;
+  left: 46%;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'BinggraeSamanco';
+  color: white;
+}
+
+.btn #Answer:hover {
+  box-shadow: 0px 0px 0px 0px #1E8185;
+}
+
+#Restart {
+  width: 150px;
+  height: 50px;
+  background: #5DC8CD;
+  box-shadow: 0px 5px 0px 0px #1E8185;
+  margin: 10px 0px;
+  position: relative;
+  left: 46%;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'BinggraeSamanco';
+  color: white;
+}
+
+#Restart:hover {
+  box-shadow: 0px 0px 0px 0px #1E8185;
+}
+
+#GameClear, #GameOver{
+	font-size: 50px;
+	text-align: center;
+	margin-top: 200px;
+	animation-name: opacity;
+	animation-duration: 2s;
+}
+
+.wrap div.game::-webkit-scrollbar {
+	display: none;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+@keyframes opacity{
+	from {
+		opacity: 0;
+	}
+	
+	to {
+		opacity: 1;
+	}
+	
+}

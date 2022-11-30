@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Secular+One&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+button {
+	cursor: pointer;
+}
+
+.login {
+  width: 30%;
+  height: 600px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login p {
+	text-align:center;
+	color:red;
+}
+h2 {
+  color: #6f61c9;
+  font-size: 3em;
+  font-family: 'Secular One', sans-serif;
+}
+
+.login_id {
+  margin-top: 20px;
+  width: 80%;
+}
+
+.login_id input {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 10px;
+  padding: 0px 20px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+.login_pw {
+  margin-top: 20px;
+  width: 80%;
+}
+
+.login_pw input {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 10px;
+  padding: 0px 20px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+.login_etc {
+  padding: 10px;
+  width: 80%;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.find {
+	text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+.submit {
+  margin-top: 50px;
+  width: 80%;
+}
+
+.findLogin {
+	color: white;
+    font-size: 1.2em;
+    border: 1px solid #5dbde3;
+    background: #5dbde3;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.findinfo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.submit input {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  outline: none;
+  border-radius: 40px;
+  background: #6f61c9;
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.main a{
+	display: block;
+	margin-top: 20px;
+}
+
+.img img{
+	width: 50%;
+    opacity: 0.8;
+    margin: 0 25%;
+}
+
+.findId {
+	margin-bottom: 30px;
+}
+
+.boder_main{
+  width: 100%;
+  height: 50px;
+  border: 0;
+  outline: none;
+  border-radius: 40px;
+  background: #6f61c9;
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
