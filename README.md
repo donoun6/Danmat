@@ -5,7 +5,6 @@
 </br>
 
 ![스크린샷_20221202_044042](https://user-images.githubusercontent.com/95620922/209087588-4c350ad8-a054-410a-a47b-9281eabd8095.png)
-![스크린샷_20221202_045300](https://user-images.githubusercontent.com/95620922/209087640-58f07ff1-f67b-47c0-b58f-27f9e146f8a0.png)
 
 </br>
 
